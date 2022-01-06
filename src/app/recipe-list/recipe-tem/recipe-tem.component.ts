@@ -9,6 +9,7 @@ import { RecipeService } from 'src/app/recipes/recipe.service';
 })
 export class RecipeTemComponent implements OnInit {
   @Input() recipe!: Recipe;
+  @Input() index!: Number;
   
   constructor(private recipeService:RecipeService) { }
 
